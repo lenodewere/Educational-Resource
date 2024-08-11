@@ -1,0 +1,217 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General Body Style */
+body {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Typography */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Link styles */
+ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Grid Styles for Featured Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Ensure text inside input boxes is visible */
+form input {
+    color: #333; /* Text color inside input fields */
+    background-color: #fff; /* Background color for input fields */
+}
+
+/* Button Styles */
+form button {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 01.5em);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #08b116, #e5ff00);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 0;
+}
+.glow-button{
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-button:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
